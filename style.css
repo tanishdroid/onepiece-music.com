@@ -48,7 +48,7 @@ footer {
 .lfy {
   height: 300px;
 }
-.main_button {
+/*.main_button {
   display: inline-flex;
   padding: 0;
   overflow: hidden;
@@ -60,13 +60,49 @@ footer {
   outline: none;
   cursor: pointer;
   
+}*/
+.main_button {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    font-size: 40px;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    /*background: rgba(255, 255, 255, .1);
+    border: 3px solid rgba(255, 255, 255, .2);*/
+    border-radius: 5px;
+    transition: .4s;
+    
+    z-index: 1;
+    border-color: transparent;
+    background: linear-gradient(
+    90deg,
+    #f9d923,
+    #00a19d,
+    #0c87b7,
+    #cb49ff,
+    #ff6666,
+    #f9d923
+    );
+    background-size: 400%;
+    box-shadow: 0 0 15px rgb(2, 4, 24);
+    animation: glow 2s ease infinite;
 }
-.main_button:hover {
+@keyframes glow {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 400%;
+  }
+}
+/*.main_button:hover {
   background: blue;
 }
 .main_button:active {
   background: blue;
-}
+}*/
 .button_icon,
 .button_text {
   display: inline-flex;
@@ -77,7 +113,8 @@ footer {
 .button_icon {
   color: gray;
   font-size: 1.2em;
-  background: red;
+  background: black;
+  border-radius: 5px;
 }
 #loaded{
   margin-top: 0;
