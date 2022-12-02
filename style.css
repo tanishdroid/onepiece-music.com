@@ -10,7 +10,8 @@ body {
   display: none;
 }
 .title {
-  font-size: 40px;
+ margin-top: 15px;
+ font-size: 40px;
  font-family: 'Courier New', Courier, monospace;
  text-align: center;
  background: linear-gradient(
