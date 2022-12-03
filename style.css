@@ -34,19 +34,34 @@ body {
   color: black;
   text-align: center;
 }
+
 .songtitle {
-  margin: 10px 0px;
-  border-radius: 15px;
   background: linear-gradient(
-    -45deg,
-    #FF0009,
-    #0002FF,
-    #FF0009
+  -20deg,
+  #00FFF2,
+  #0DFF00,
+  #FFF200,
+  #FF000D,
+  #F200FF,
+  #f9d923,
+  #00a19d,
+  #0c87b7,
+  #cb49ff,
+  #ff6666,
+  #00FFF2
   );
   background-size: 400%;
-  box-shadow: 0 0 15px rgb(2, 4, 24);
-  animation: title-glow 10s ease infinite;
+  animation: title-glow 5s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
+.songtitle{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px;
+  border-radius: 15px;
+}
+
 @keyframes title-glow{
   0%{
     background-position: 0% 50%;
